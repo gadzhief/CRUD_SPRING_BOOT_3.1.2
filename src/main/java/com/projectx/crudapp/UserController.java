@@ -54,14 +54,8 @@ public class UserController {
         return "update-user";
     }
     @PostMapping("edit/{id}")
-    public String update(@PathVariable("id") Long id, @RequestParam String firstName,
-                       @RequestParam String lastName,
-                       @RequestParam String email) {
-        User user = userService.getUserById(id);
-        user.setFirstName(firstName);
-        user.setLastName(lastName);
-        user.setEmail(email);
-
+    public String update(@PathVariable("id") Long id, @ModelAttribute("user") User user) {
+        userService.getUserById(id);
         userService.saveUser(user);
 
         return "redirect:/users";
