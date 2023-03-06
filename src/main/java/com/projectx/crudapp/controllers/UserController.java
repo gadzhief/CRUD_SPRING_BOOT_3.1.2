@@ -1,6 +1,8 @@
-package com.projectx.crudapp;
+package com.projectx.crudapp.controllers;
 
 
+import com.projectx.crudapp.model.User;
+import com.projectx.crudapp.services.UserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;

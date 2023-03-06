@@ -1,5 +1,6 @@
-package com.projectx.crudapp;
+package com.projectx.crudapp.repositories;
 
+import com.projectx.crudapp.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

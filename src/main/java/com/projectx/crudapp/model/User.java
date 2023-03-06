@@ -1,4 +1,4 @@
-package com.projectx.crudapp;
+package com.projectx.crudapp.model;
 
 import jakarta.validation.constraints.*;
 import jakarta.persistence.*;
