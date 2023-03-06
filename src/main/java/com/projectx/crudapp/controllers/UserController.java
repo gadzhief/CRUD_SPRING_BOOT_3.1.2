@@ -35,7 +35,7 @@ public class UserController {
     public String createUserForm(Model model) {
     model.addAttribute("user", new User());
     return "create";
-}
+    }
 
 
     @GetMapping("/{id}")

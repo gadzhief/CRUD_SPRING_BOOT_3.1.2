@@ -33,9 +33,9 @@ public class UserServiceImpl implements UserService {
         userRepository.deleteById(id);
     }
     @Transactional
-    public User updateUser(Long studentId, User student) {
-        student.setId(studentId);
-        return userRepository.save(student);
+    public User updateUser(Long userId, User user) {
+        user.setId(userId);
+        return userRepository.save(user);
     }
 
 
